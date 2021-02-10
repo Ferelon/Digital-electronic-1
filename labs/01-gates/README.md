@@ -2,7 +2,7 @@
 
 ![Logo](../../logolink_eng.jpg)
 
-### Learning objectives test
+### Learning objectives test 2
 
 The purpose of this laboratory exercise is to learn how to use the git versioning system, write the markdown readme file, use the Linux console terminal to work in the lab, and how to compose a basic VHDL code using the online development tool.
 
