@@ -2,10 +2,16 @@
 
 ## h2 header
 
+*italic*
+**bold**
+
+[I'm an inline-style link](https://www.google.com)
+
 ```vhdl
-\begin{align*}
-    f(c,b,a) =&~ \overline{b}\,a + \overline{c}\,\overline{b}\\
-    f(c,b,a)_{\textup{NAND}} =&\\
-    f(c,b,a)_{\textup{NOR}} =&\\
-\end{align*}
+entity ANDGATE is
+  port ( 
+    I1 : in std_logic;
+    I2 : in std_logic;
+    O  : out std_logic);
+end entity ANDGATE;
 ```
