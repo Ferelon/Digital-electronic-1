@@ -2,6 +2,6 @@
 
 ## h2 header
 
-```
+```vhdl
 git status;
 ```
