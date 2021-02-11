@@ -1,4 +1,4 @@
-# CP 1
+# LAB 1
 
 ### VHDL design.vhd code
 
