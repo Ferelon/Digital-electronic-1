@@ -24,8 +24,8 @@ end architecture;
 
 1. One
 2. Two
-⋅⋅* Unordered.
-1. Three
+⋅⋅ Unordered
+3. Three
 ⋅⋅1. Ordered
-4. Four.
+4. Four
 
