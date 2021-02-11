@@ -4,7 +4,7 @@
 
 [VUT profile](https://www.vutbr.cz/lide/jiri-kadlec-223381)
 
-**VUT number: 223381   **
+**VUT number: 223381**   
 *ID: xkadle41*
 
 ```vhdl
