@@ -1,11 +1,11 @@
 # Digital-electronic-1
 
-## h2 header
+## ID: 223381
 
-*italic*
-**bold**
+*Jiří Kadlec*
+**xkadle41**
 
-[I'm an inline-style link](https://www.google.com)
+[VUT profile](https://www.vutbr.cz/lide/jiri-kadlec-223381)
 
 ```vhdl
 entity ANDGATE is
