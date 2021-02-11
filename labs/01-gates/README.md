@@ -71,3 +71,7 @@ end architecture dataflow;
 | 1 | 0 | 1 | 1 | 1 | 1 |
 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 1 | 1 | 1 | 0 | 0 | 0 |
+
+### Circuit simulators comparation
+
+From those ![Circuitverse](https://circuitverse.org/) seems the best. User friendly good looking UI, free to use, option-wise comparable, good funcionality,
