@@ -51,11 +51,11 @@ end architecture dataflow;
 
 ### Screenshot of simulated time waveform for De Morgans law
 
-![Screenshot od EDA Playground](Images/eda_1.png)
+![Screenshot od EDA Playground](Images/EDA1.png)
 
 ### Screenshot of simulated time waveform for De Morgans law
 
-![Screenshot od EDA Playground](Images/eda_2.png)
+![Screenshot od EDA Playground](Images/EDA2.png)
 
 ### Function output table
 
