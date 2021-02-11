@@ -21,11 +21,3 @@ begin
     end process;
 end architecture;
 ```
-
-1. One
-2. Two
-⋅⋅ Unordered
-3. Three
-⋅⋅1. Ordered
-4. Four
-
