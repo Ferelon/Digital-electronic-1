@@ -1,10 +1,9 @@
 # Digital-electronic-1
 
-## ID: 223381
+## Jiří Kadlec
 
-*Jiří Kadlec*
-**xkadle41**
-
+**VUT number: 223381**
+*ID: xkadle41*
 [VUT profile](https://www.vutbr.cz/lide/jiri-kadlec-223381)
 
 ```vhdl
