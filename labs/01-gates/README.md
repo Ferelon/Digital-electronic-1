@@ -2,7 +2,7 @@
 
 ### VHDL design.vhd code
 
-For both verifications (De Morgan's law of function f(c,b,a) and Distributive law)
+For both verifications (De Morgan's law of function f(c,b,a), Boolean postulates and Distributive law)
 
 ```vhdl
 library ieee;               -- Standard library
@@ -51,15 +51,18 @@ end architecture dataflow;
 
 ### Screenshot of simulated time waveform for De Morgans law
 
+![Logic function](Images/equations.png)
+
 ![De Morgans law](Images/EDA1.PNG)
 
-### Screenshot of simulated time waveform for Distributive law
+### Screenshot of simulated time waveform for Boolean postulates and Distributive law
+
+![Logic function](Images/distributives.png)
+![Logic function](Images/postulates.png)
 
 ![Distributive law](Images/EDA2.PNG)
 
 ### Function output table
-
-![Logic function](Images/equations.png)
 
 | **c** | **b** |**a** | **f(c,b,a)** | **f(c,b,a)NAND** | **f(c,b,a)NOR** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
