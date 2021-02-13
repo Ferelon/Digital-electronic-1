@@ -57,8 +57,8 @@ end architecture dataflow;
 
 ### Screenshot of simulated time waveform for Boolean postulates and Distributive law
 
-![Logic function](Images/distributives.png)
 ![Logic function](Images/postulates.png)
+![Logic function](Images/distributives.png)
 
 ![Distributive law](Images/EDA2.PNG)
 
