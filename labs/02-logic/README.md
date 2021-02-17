@@ -31,7 +31,7 @@
 
 ### Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function
 
-![Binary comparator simplified functions](Images/simplified.png)
+![Binary comparator simplified functions](Images/simplify.png)
 
 ## Third task
 
