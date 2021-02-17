@@ -25,13 +25,13 @@
 
 ## Second task
 
-### Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function
-
-![Binary comparator simplified functions](Images/comparator_min.png)
-
 ### Karnaugh maps for all three listed functions
 
 ![Karnaugh map for "equals" function](Images/kmap_equals.png)
+
+### Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function
+
+![Binary comparator simplified functions](Images/comparator_min.png)
 
 ## Third task
 
