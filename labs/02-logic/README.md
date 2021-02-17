@@ -27,7 +27,7 @@
 
 ### Karnaugh maps for all three listed functions
 
-![Karnaugh map for "equals" function](Images/kmap_equals.png)
+![Karnaugh map for "equals" function](Images/mapy.jpg)
 
 ### Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function
 
