@@ -1,5 +1,42 @@
 # LAB 2
 
+## First task
+
+### Binary comparator truth table
+
+| **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B is greater than A** | **B equals A** | **B is less than A** |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 0 | 0 0 | 0 | 1 | 0 |
+| 1 | 0 0 | 0 1 | 0 | 0 | 1 |
+| 2 | 0 0 | 1 0 | 0 | 0 | 1 |
+| 3 | 0 0 | 1 1 | 0 | 0 | 1 |
+| 4 | 0 1 | 0 0 | 1 | 0 | 0 |
+| 5 | 0 1 | 0 1 | 0 | 1 | 0 |
+| 6 | 0 1 | 1 0 | 0 | 0 | 1 |
+| 7 | 0 1 | 1 1 | 0 | 0 | 1 |
+| 8 | 1 0 | 0 0 | 1 | 0 | 0 |
+| 9 | 1 0 | 0 1 | 1 | 0 | 0 |
+| 10 | 1 0 | 1 0 | 0 | 1 | 0 |
+| 11 | 1 0 | 1 1 | 0 | 0 | 1 |
+| 12 | 1 1 | 0 0 | 1 | 0 | 0 |
+| 13 | 1 1 | 0 1 | 1 | 0 | 0 |
+| 14 | 1 1 | 1 0 | 1 | 0 | 0 |
+| 15 | 1 1 | 1 1 | 0 | 1 | 0 |
+
+## Second task
+
+### Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function
+
+![Binary comparator functions](Images/comparator.png)
+
+![Binary comparator simplified functions](Images/comparator_min.png)
+
+### Karnaugh maps for all three listed functions
+
+![Karnaugh map for "equals" function](Images/kmap_equals.png)
+
+## Third task
+
 ### VHDL design.vhd code for 4-bit comparator
 
 ```vhdl
@@ -168,34 +205,3 @@ Finding VCD file...
 [2021-02-17 08:44:02 EST] Opening EPWave...
 Done
 ```
-
-### Binary comparator truth table
-
-| **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B is greater than A** | **B equals A** | **B is less than A** |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 0 | 0 0 | 0 | 1 | 0 |
-| 1 | 0 0 | 0 1 | 0 | 0 | 1 |
-| 2 | 0 0 | 1 0 | 0 | 0 | 1 |
-| 3 | 0 0 | 1 1 | 0 | 0 | 1 |
-| 4 | 0 1 | 0 0 | 1 | 0 | 0 |
-| 5 | 0 1 | 0 1 | 0 | 1 | 0 |
-| 6 | 0 1 | 1 0 | 0 | 0 | 1 |
-| 7 | 0 1 | 1 1 | 0 | 0 | 1 |
-| 8 | 1 0 | 0 0 | 1 | 0 | 0 |
-| 9 | 1 0 | 0 1 | 1 | 0 | 0 |
-| 10 | 1 0 | 1 0 | 0 | 1 | 0 |
-| 11 | 1 0 | 1 1 | 0 | 0 | 1 |
-| 12 | 1 1 | 0 0 | 1 | 0 | 0 |
-| 13 | 1 1 | 0 1 | 1 | 0 | 0 |
-| 14 | 1 1 | 1 0 | 1 | 0 | 0 |
-| 15 | 1 1 | 1 1 | 0 | 1 | 0 |
-
-### Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function
-
-![Binary comparator functions](Images/comparator.png)
-
-![Binary comparator simplified functions](Images/comparator_min.png)
-
-### Karnaugh maps for all three listed functions
-
-![Karnaugh map for "equals" function](Images/kmap_equals.png)
