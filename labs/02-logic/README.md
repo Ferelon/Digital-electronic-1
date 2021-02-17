@@ -25,7 +25,7 @@
 
 ## Second task
 
-### Karnaugh maps for all three listed functions
+### Karnaugh maps for all three listed functions (including areas for simplification of the functions)
 
 ![Karnaugh map for "equals" function](Images/mapy.jpg)
 
