@@ -1,7 +1,5 @@
 # Lab 2: Combinational logic
 
-![Logo](../../logolink_eng.jpg)
-
 ### Learning objectives
 
 The purpose of this laboratory exercise is to learn to use different ways of writing combination functions (truth table, K-map, SoP/PoS forms), their minimization, the use of signal assignments in VHDL, and assertion statements in VHDL testbench.
@@ -35,41 +33,6 @@ The purpose of this laboratory exercise is to learn to use different ways of wri
 According to the truth table, write canonical SoP (Sum of Products) and PoS (Product of Sums) forms for "equals" and "less than" functions:
 
 ![Binary comparator functions](Images/comparator.png)
-
-
-## Part 1: Synchronize Git and create a new folder
-
-When you start working, always synchronize the contents of your working folder and local repository with remote version at GitHub. This way you are sure that you will not lose any of your changes.
-
-Run Git Bash (Windows) of Terminal (Linux), navigate to your working directory, and update local repository.
-
-```bash
-## Windows Git Bash:
-$ cd d:/Documents/
-$ cd your-name/
-$ ls
-Digital-electronics-1/
-$ cd Digital-electronics-1/
-$ git pull
-
-## Linux:
-$ cd
-$ cd Documents/
-$ cd your-name/
-$ ls
-Digital-electronics-1/
-$ cd Digital-electronics-1/
-$ git pull
-```
-
-Create a new working folder `Labs/02-logic` for this exercise.
-
-```bash
-## Windows Git Bash or Linux:
-$ cd Labs/
-$ mkdir 02-logic
-```
-
 
 ## Part 2: Logic function minimization
 
