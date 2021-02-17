@@ -188,7 +188,6 @@ begin
     end process p_stimulus;
 end architecture testbench;
 ```
-### Link to [EDA Playground](https://www.edaplayground.com/x/W53R)
 
 ### Simulator console output
 
@@ -205,3 +204,5 @@ Finding VCD file...
 [2021-02-17 08:44:02 EST] Opening EPWave...
 Done
 ```
+
+### Link to [EDA Playground](https://www.edaplayground.com/x/W53R)
