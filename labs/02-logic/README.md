@@ -27,8 +27,6 @@
 
 ### Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function
 
-![Binary comparator functions](Images/comparator.png)
-
 ![Binary comparator simplified functions](Images/comparator_min.png)
 
 ### Karnaugh maps for all three listed functions
