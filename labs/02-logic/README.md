@@ -31,7 +31,7 @@
 
 ### Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function
 
-![Binary comparator simplified functions](Images/comparator_min.png)
+![Binary comparator simplified functions](Images/simplified.png)
 
 ## Third task
 
@@ -203,4 +203,4 @@ Finding VCD file...
 Done
 ```
 
-### Link to [EDA Playground](https://www.edaplayground.com/x/W53R)
+### Link to [EDA Playground](https://www.edaplayground.com/x/W53R) (Minule zde byl link, přesto jsem nedostal body, tak pro jistotu ještě jako text: https://www.edaplayground.com/x/W53R)
