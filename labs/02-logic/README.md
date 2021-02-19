@@ -33,7 +33,7 @@
 
 ![Binary comparator simplified functions](Images/simplify.png)
 
-### Link to [EDA Playground](https://www.edaplayground.com/x/deB_) (Minule zde byl link, fungoval mi i po exportu do pdf, přesto jsem nedostal body, tak pro jistotu ještě jako text: (https://www.edaplayground.com/x/deB_) )
+### Link to [EDA Playground](https://www.edaplayground.com/x/deB_) (Minule zde byl link, fungoval mi i po exportu do pdf, přesto jsem nedostal body, tak pro jistotu ještě jako text: https://www.edaplayground.com/x/deB_ - zkopírovat i s podtržítkem)
 
 ## Third task
 
