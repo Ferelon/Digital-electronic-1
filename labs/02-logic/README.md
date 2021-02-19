@@ -33,6 +33,8 @@
 
 ![Binary comparator simplified functions](Images/simplify.png)
 
+### Link to [EDA Playground](https://www.edaplayground.com/x/deB_) (Minule zde byl link, fungoval mi i po exportu do pdf, přesto jsem nedostal body, tak pro jistotu ještě jako text: https://www.edaplayground.com/x/deB_)
+
 ## Third task
 
 ### VHDL design.vhd code for 4-bit comparator
@@ -203,4 +205,4 @@ Finding VCD file...
 Done
 ```
 
-### Link to [EDA Playground](https://www.edaplayground.com/x/W53R) (Minule zde byl link, přesto jsem nedostal body, tak pro jistotu ještě jako text: https://www.edaplayground.com/x/W53R)
+### Link to [EDA Playground](https://www.edaplayground.com/x/W53R) (https://www.edaplayground.com/x/W53R)
