@@ -100,7 +100,7 @@ p_stimulus : process
 ### Tutorial for Vivado design flow
 
 #### Project creation
-   - File --> Project --> New
+   - File -> Project -> New
         - Next
    - Name project and modify project location
         - Next
@@ -115,10 +115,31 @@ p_stimulus : process
    - Finish
 
 #### Adding source file
+   - File -> Add sources
+   - Add or create design sources
+        - Next
+   - Add or create source file (type: VHDL) and name it
+   - Finish
+   - Define module and specify sources (optional)
+   - Ok and confirm
 
 #### Adding testbench file
+   - File -> Add sources
+   - Add or create simulation sources
+        - Next
+   - Add or create source file (type: VHDL) and name it
+   - Finish
+   - Define module and specify sources (optional)
+   - Ok and confirm
 
 #### Running simulation
+   - Flow -> Run simulation -> Run behavioral simulation
+   - To change value form (binary, etc) or color of its waveform, right-click on its name or value and select radix / Signal color
+   - To close simulation close the blue popup line above the main window (**Simulation**-Behavioral simulation-Name_of_the_simulation_Name_of_the_testbench )
 
 #### Adding XDC constraints file
-
+   - File -> Add sources
+   - Add or create Constraints
+        - Next
+   - Add or create source file (type: XDC) and name it
+   - Finish
