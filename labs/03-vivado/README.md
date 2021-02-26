@@ -101,17 +101,17 @@ p_stimulus : process
 
 #### Project creation
    - File --> Project --> New
-   - Next
+        - Next
    - Name project and modify project location
-   - Next
+        - Next
    - Choose **RTL Project**
-   - Next
+        - Next
    - Add or create source file (type: VHDL) and name it
-   - Next
+        - Next
    - Add or create constraint file (optional)
-   - Next
+        - Next
    - Choose from a Board or part you'll be working with ( ex. Nexys A7-50T)
-   - Next
+        - Next
    - Finish
 
 #### Adding source file
