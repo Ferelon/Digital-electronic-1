@@ -100,6 +100,19 @@ p_stimulus : process
 ### Tutorial for Vivado design flow
 
 #### Project creation
+   - File --> Project --> New
+   - Next
+   - Name project and modify project location
+   - Next
+   - Choose **RTL Project**
+   - Next
+   - Add or create source file (type: VHDL) and name it
+   - Next
+   - Add or create constraint file (optional)
+   - Next
+   - Choose from a Board or part you'll be working with ( ex. Nexys A7-50T)
+   - Next
+   - Finish
 
 #### Adding source file
 
