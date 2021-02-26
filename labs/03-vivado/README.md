@@ -42,15 +42,54 @@
 
 ## Second task
 
-### Karnaugh maps for all three listed functions (including areas for simplification of the functions)
+### VHDL architecture from source file mux_2bit_4to1.vhd
 
-![Karnaugh map for "equals" function](Images/mapy.jpg)
+```vhdl
+architecture Behavioral of mux_2bit_4to1 is
+begin
+    f_o <=  a_i when (sel_i = "00") else
+            b_i when (sel_i = "01") else
+            c_i when (sel_i = "10") else
+            d_i;
+end architecture Behavioral;
+```
 
-### Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function
+### VHDL stimulus process from testbench file tb_mux_2bit_4to1.vhd
 
-![Binary comparator simplified functions](Images/simplify.png)
+```vhdl
+p_stimulus : process
+    begin
+        -- Report a note at the begining of stimulus process
+        report "Stimulus process started" severity note;
 
-### Link to [EDA Playground](https://www.edaplayground.com/x/deB_) (Minule zde byl link, fungoval mi i po exportu do pdf, přesto jsem nedostal body, tak pro jistotu ještě jako text: https://www.edaplayground.com/x/deB_ - zkopírovat i s podtržítkem)
+        -- First test values
+        s_d <= "00"; s_c <= "11"; s_b <= "11"; s_a <= "11";
+        s_sel <= "00";
+        wait for 100 ns;
+        
+        s_d <= "10"; s_c <= "01"; s_b <= "01"; s_a <= "00";
+        s_sel <= "00";
+        wait for 100 ns;
+        
+        s_d <= "10"; s_c <= "01"; s_b <= "01"; s_a <= "11";
+        s_sel <= "01";
+        wait for 100 ns;
+        
+        s_d <= "10"; s_c <= "01"; s_b <= "11"; s_a <= "00";
+        s_sel <= "01";
+        wait for 100 ns;
+        
+        s_sel <= "10";
+        wait for 100 ns;
+        
+        s_sel <= "11";
+        wait for 100 ns;
+
+        -- Report a note at the end of stimulus process
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+```
 
 ## Third task
 
