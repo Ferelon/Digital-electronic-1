@@ -23,24 +23,24 @@
 | SW14 | 10K | U11 | 
 | SW15 | 10K | V10 | 
 
-| **LED diode** | **Resistor [Ω]** | **Pin** | 
-| :-: | :-: | :-: |
-| LED0 | 330 | H17 |
-| LED1 | 330 | K15 |
-| LED2 | 330 | J13 | 
-| LED3 | 330 | N14 | 
-| LED4 | 330 | R18 |
-| LED5 | 330 | V17 | 
-| LED6 | 330 | U17 | 
-| LED7 | 330 | U16 | 
-| LED8 | 330 | V16 | 
-| LED9 | 330 | T15 | 
-| LED10 | 330 | U14 | 
-| LED11 | 330 | T16 | 
-| LED12 | 330 | V15 | 
-| LED13 | 330 | V14 | 
-| LED14 | 330 | V12 | 
-| LED15 | 330 | V11 | 
+| **LED diode** | **Resistor [Ω]** | **Pin** | **Active** | 
+| :-: | :-: | :-: | :-: |
+| LED0 | 330 | H17 | High |
+| LED1 | 330 | K15 | High |
+| LED2 | 330 | J13 | High |
+| LED3 | 330 | N14 | High |
+| LED4 | 330 | R18 | High |
+| LED5 | 330 | V17 | High |
+| LED6 | 330 | U17 | High |
+| LED7 | 330 | U16 | High |
+| LED8 | 330 | V16 | High |
+| LED9 | 330 | T15 | High |
+| LED10 | 330 | U14 | High |
+| LED11 | 330 | T16 | High |
+| LED12 | 330 | V15 | High |
+| LED13 | 330 | V14 | High |
+| LED14 | 330 | V12 | High |
+| LED15 | 330 | V11 | High |
 
 ## Second task
 
