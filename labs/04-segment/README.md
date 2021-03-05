@@ -236,7 +236,7 @@ end architecture behavioral;
 | E | 1110 | 0 | 1 | 0 | 0 |
 | F | 1111 | 0 | 1 | 1 | 0 |
 
-    ```vhdl
+```vhdl
     -- Turn LED(4) on if input value is equal to 0, ie "0000"
     LED(4) <= '1' when SW <= "0000" else '0';
     
@@ -260,7 +260,7 @@ end architecture behavioral;
         (SW = "0100") or
         (SW = "1000")
         ) else '0';
-        ```
+```
 
 ### Screenshot with simulated time waveforms; always display all inputs and outputs
 
