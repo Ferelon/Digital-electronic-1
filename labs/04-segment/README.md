@@ -117,7 +117,9 @@ end architecture behavioral;
 
 ### Listing of VHDL code from source file top.vhd with 7-segment module instantiation
 
-![simulated time waveforms](Images/waveforms.JPG)
+```vhdl
+
+```
 
 ## Third task
 
