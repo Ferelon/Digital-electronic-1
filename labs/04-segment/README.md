@@ -22,6 +22,14 @@
 | CF | 100 | T11 | 
 | CG | 100 | L18 | 
 | DP | 100 | H15 | 
+| SW0 | 10K | J15 |
+| SW1 | 10K | L16 |
+| SW2 | 10K | M13 | 
+| SW3 | 10K | R15 |
+| LED0(high) | 330 | H17 |
+| LED1(high) | 330 | K15 |
+| LED2(high) | 330 | J13 |
+| LED3(high) | 330 | N14 |
 
 ### Decoder truth table for common anode 7-segment display
 
@@ -46,104 +54,94 @@
 
 ## Second task
 
-### VHDL architecture from source file mux_2bit_4to1.vhd
+### Listing of VHDL architecture from source file hex_7seg.vhd with syntax highlighting
 
 ```vhdl
-architecture Behavioral of mux_2bit_4to1 is
+architecture behavioral of hex_7seg is
 begin
-    f_o <=  a_i when (sel_i = "00") else
-            b_i when (sel_i = "01") else
-            c_i when (sel_i = "10") else
-            d_i;
-end architecture Behavioral;
+    --------------------------------------------------------------------
+    -- p_7seg_decoder:
+    -- A combinational process for 7-segment display decoder. 
+    -- Any time "hex_i" is changed, the process is "executed".
+    -- Output pin seg_o(6) corresponds to segment A, seg_o(5) to B, etc.
+    --------------------------------------------------------------------
+    p_7seg_decoder : process(hex_i)
+    begin
+        case hex_i is
+            when "0000" =>
+                seg_o <= "0000001";     -- 0
+            when "0001" =>
+                seg_o <= "1001111";     -- 1
+            when "0010" =>
+                seg_o <= "0010010";     -- 2
+            when "0011" =>
+                seg_o <= "0000110";     -- 3
+            when "0100" =>
+                seg_o <= "1001100";     -- 4
+            when "0101" =>
+                seg_o <= "0100100";     -- 5
+            when "0110" =>
+                seg_o <= "0100000";     -- 6
+            when "0111" =>
+                seg_o <= "0001111";     -- 7
+            when "1000" =>
+                seg_o <= "0000000";     -- 8
+            when "1001" =>
+                seg_o <= "0000100";     -- 9
+            when "1010" =>
+                seg_o <= "0001000";     -- A
+            when "1011" =>
+                seg_o <= "1100000";     -- b
+            when "1100" =>
+                seg_o <= "0110001";     -- C
+            when "1101" =>
+                seg_o <= "1000010";     -- d
+            when "1110" =>
+                seg_o <= "0110000";     -- E
+            when others =>
+                seg_o <= "0111000";     -- F
+        end case;
+    end process p_7seg_decoder;
+end architecture behavioral;
 ```
 
-### VHDL stimulus process from testbench file tb_mux_2bit_4to1.vhd
+### Listing of VHDL stimulus process from testbench file tb_hex_7seg.vhd with syntax highlighting and asserts
 
 ```vhdl
-p_stimulus : process
-    begin
-        -- Report a note at the begining of stimulus process
-        report "Stimulus process started" severity note;
 
-        -- First test values
-        s_d <= "00"; s_c <= "11"; s_b <= "11"; s_a <= "11";
-        s_sel <= "00";
-        wait for 100 ns;
-        
-        s_d <= "10"; s_c <= "01"; s_b <= "01"; s_a <= "00";
-        s_sel <= "00";
-        wait for 100 ns;
-        
-        s_d <= "10"; s_c <= "01"; s_b <= "01"; s_a <= "11";
-        s_sel <= "01";
-        wait for 100 ns;
-        
-        s_d <= "10"; s_c <= "01"; s_b <= "11"; s_a <= "00";
-        s_sel <= "01";
-        wait for 100 ns;
-        
-        s_sel <= "10";
-        wait for 100 ns;
-        
-        s_sel <= "11";
-        wait for 100 ns;
-
-        -- Report a note at the end of stimulus process
-        report "Stimulus process finished" severity note;
-        wait;
-    end process p_stimulus;
 ```
 
-### Screenshot of simulated time waveforms
+### Screenshot with simulated time waveforms; always display all inputs and outputs
+
+![simulated time waveforms](Images/waveforms.JPG)
+
+### Listing of VHDL code from source file top.vhd with 7-segment module instantiation
 
 ![simulated time waveforms](Images/waveforms.JPG)
 
 ## Third task
 
-### Tutorial for Vivado design flow
+### Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting
 
-#### Project creation
-   - File -> Project -> New
-        - Next
-   - Name project and modify project location
-        - Next
-   - Choose **RTL Project**
-        - Next
-   - Add or create source file (type: VHDL) and name it
-        - Next
-   - Add or create constraint file (optional)
-        - Next
-   - Choose from a Board or part you'll be working with ( ex. Nexys A7-50T)
-        - Next
-   - Finish
+| **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0000 |  |  |  |  |
+| 1 | 0001 |  |  |  |  |
+| 2 |      |  |  |  |  |
+| 3 |      |  |  |  |  |
+| 4 |      |  |  |  |  |
+| 5 |      |  |  |  |  |
+| 6 |      |  |  |  |  |
+| 7 |      |  |  |  |  |
+| 8 | 1000 |  |  |  |  |
+| 9 |      |  |  |  |  |
+| A |      |  |  |  |  |
+| b |      |  |  |  |  |
+| C |      |  |  |  |  |
+| d |      |  |  |  |  |
+| E | 1110 |  |  |  |  |
+| F | 1111 |  |  |  |  |
 
-#### Adding source file
-   - File -> Add sources
-   - Add or create design sources
-        - Next
-   - Add or create source file (type: VHDL) and name it
-   - Finish
-   - Define module and specify sources (optional)
-   - Ok and confirm
+### Screenshot with simulated time waveforms; always display all inputs and outputs
 
-#### Adding testbench file
-   - File -> Add sources
-   - Add or create simulation sources
-        - Next
-   - Add or create source file (type: VHDL) and name it
-   - Finish
-   - Define module and specify sources (optional)
-   - Ok and confirm
-
-#### Running simulation
-   - Flow -> Run simulation -> Run behavioral simulation
-   - To change value form (binary, etc) or color of its waveform, right-click on its name or value and select radix / Signal color
-   - To close simulation close the blue popup line above the main window (**Simulation**-Behavioral simulation-Name_of_the_simulation_Name_of_the_testbench )
-
-#### Adding XDC constraints file
-   - File -> Add sources
-   - Add or create Constraints
-        - Next
-   - Add or create source file (type: XDC) and name it
-   - Finish
+![simulated time waveforms](Images/waveforms.JPG)
