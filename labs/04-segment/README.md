@@ -2,45 +2,47 @@
 
 ## First task
 
-### Table with connection of 16 slide switches and 16 LEDs on Nexys A7 board
+### Table with connection of 7-segment displays on Nexys A7 board
 
-| **Switch** | **Resistor [Ω]** | **Pin** | 
+| **Component** | **Resistor [Ω]** | **PIN** | 
 | :-: | :-: | :-: |
-| SW0 | 10K | J15 |
-| SW1 | 10K | L16 |
-| SW2 | 10K | M13 | 
-| SW3 | 10K | R15 | 
-| SW4 | 10K | R17 |
-| SW5 | 10K | T18 | 
-| SW6 | 10K | U18 | 
-| SW7 | 10K | R13 | 
-| SW8 | 10K | T8 | 
-| SW9 | 10K | U8 | 
-| SW10 | 10K | R16 | 
-| SW11 | 10K | T13 | 
-| SW12 | 10K | H6 | 
-| SW13 | 10K | U12 | 
-| SW14 | 10K | U11 | 
-| SW15 | 10K | V10 | 
+| AN0 | 2K2 | J17 | 
+| AN1 | 2K2 | J18 | 
+| AN2 | 2K2 | T9 | 
+| AN3 | 2K2 | J14 | 
+| AN4 | 2K2 | P14 | 
+| AN5 | 2K2 | T14 | 
+| AN6 | 2K2 | K2 | 
+| AN7 | 2K2 | U13 | 
+| CA | 100 | T10 |
+| CB | 100 | R10 |
+| CC | 100 | K16 | 
+| CD | 100 | K13 | 
+| CE | 100 | P15 |
+| CF | 100 | T11 | 
+| CG | 100 | L18 | 
+| DP | 100 | H15 | 
 
-| **LED diode** | **Resistor [Ω]** | **Pin** | **Active** | 
-| :-: | :-: | :-: | :-: |
-| LED0 | 330 | H17 | High |
-| LED1 | 330 | K15 | High |
-| LED2 | 330 | J13 | High |
-| LED3 | 330 | N14 | High |
-| LED4 | 330 | R18 | High |
-| LED5 | 330 | V17 | High |
-| LED6 | 330 | U17 | High |
-| LED7 | 330 | U16 | High |
-| LED8 | 330 | V16 | High |
-| LED9 | 330 | T15 | High |
-| LED10 | 330 | U14 | High |
-| LED11 | 330 | T16 | High |
-| LED12 | 330 | V15 | High |
-| LED13 | 330 | V14 | High |
-| LED14 | 330 | V12 | High |
-| LED15 | 330 | V11 | High |
+### Decoder truth table for common anode 7-segment display
+
+| **Hex** | **Inputs** | **A** | **B** | **C** | **D** | **E** | **F** | **G** |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 1 | 0001 | 1 | 0 | 0 | 1 | 1 | 1 | 1 |
+| 2 | 0010 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
+| 3 | 0011 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 4 | 0100 | 1 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 5 | 0101 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| 6 | 0110 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 7 | 0111 | 0 | 0 | 0 | 1 | 1 | 1 | 1 |
+| 8 | 1000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | 1001 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| A | 1010 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| b | 1011 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| C | 1100 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
+| d | 1101 | 1 | 0 | 0 | 0 | 0 | 1 | 0 |
+| E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ## Second task
 
