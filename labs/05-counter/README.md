@@ -83,7 +83,7 @@ p_cnt_up_down : process(clk)
 
 ### Screenshot with simulated time waveforms
 
-![simulated time waveforms](Images/waveforms1.JPG)
+![simulated time waveforms](Images/waveforms.JPG)
 
 ## Third task
 
