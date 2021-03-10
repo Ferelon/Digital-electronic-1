@@ -95,4 +95,4 @@ p_cnt_up_down : process(clk)
 
 ### Image of the top layer including both counters, ie a 4-bit bidirectional counter from Part 4 and a 16-bit counter with a different time base from Part Experiments on your own
 
-![simulated time waveforms](Images/waveforms2.JPG)
+![simulated time waveforms](Images/schema.JPG)
