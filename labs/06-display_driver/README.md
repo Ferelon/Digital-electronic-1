@@ -1,16 +1,39 @@
-# LAB 5
+# LAB 6
 
 ## First task
 
-### Table with connection of push buttons on Nexys A7 board
+### Timing diagram figure for displaying value 3.142
 
-| **Button** | **Resistor [Ω]** | **PIN** | **Value when pressed + voltage [V]** | 
-| :-: | :-: | :-: | :-: |
-| BTNL | 10k | P17 | High 3,3 |
-| BTNR | 10k | M17 | High 3,3 |
-| BTNU | 10k | M18 | High 3,3 |
-| BTND | 10k | P18 | High 3,3 | 
-| BTNC | 10k | N17 | High 3,3 |
+![Timing diagram](Images/table.jpg)
+
+```javascript
+{
+  signal:
+  [
+    ['Digit position',
+      {name: 'Common anode: AN(3)', wave: 'xx01..01..01'},
+      {name: 'AN(2)', wave: 'xx101..01..0'},
+      {name: 'AN(1)', wave: 'xx1.01..01..'},
+      {name: 'AN(0)', wave: 'xx1..01..01.'},
+    ],
+    ['Seven-segment data',
+      {name: '4-digit value to display', wave: 'xx3333555599', data: ['3','1','4','2','3','1','4','2','3','1']},
+      {name: 'CA', wave: 'xx01.0.1.0.1'},
+      {name: 'CB', wave: 'xx0.........'},
+      {name: 'CC', wave: 'xx0..10..10.'},
+      {name: 'CD', wave: 'xx01.0.1.0.1'},
+      {name: 'CE', wave: 'xx1..01..01.'},
+      {name: 'CF', wave: 'xx1.01..01..'},
+      {name: 'CG', wave: 'xx010..10..1'},
+    ],
+    {name: 'Decimal point: DP', wave: 'xx01..01..01'},
+  ],
+  head:
+  {
+    text: '                    4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms',
+  },
+}
+```
 
 ### Table with calculated values
 
