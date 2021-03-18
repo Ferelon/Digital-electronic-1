@@ -128,7 +128,7 @@ end architecture testbench;
 
 ### Screenshot with simulated time waveforms; always display all inputs and outputs
 
-![simulated time waveforms](Images/waveforms.JPG)
+![simulated time waveforms](Images/waveform.JPG)
 
 ### Listing of VHDL architecture of the top layer
 
