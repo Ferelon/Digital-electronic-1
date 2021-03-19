@@ -179,4 +179,4 @@ end architecture Behavioral;
 
 ### Image of the driver schematic. The image can be drawn on a computer or by hand
 
-![schema](Images/schema.jpg)
+![schema](Images/schema1.jpg)
