@@ -1,4 +1,4 @@
-# LAB 6
+# LAB 7
 
 ## First task
 
