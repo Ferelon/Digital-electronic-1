@@ -86,7 +86,7 @@
 
 ### Screenshot with simulated time waveforms; always display all inputs and outputs
 
-![simulated time waveforms](Images/waveforms.JPG)
+![simulated time waveforms](Images/waveform.JPG)
 
 ## Third task
 
