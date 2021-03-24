@@ -55,21 +55,29 @@
 
         s_arst <= '0';
         s_en   <= '0'; 
-        s_d    <= '0'; wait for 100 ns;
-        s_d    <= '1'; wait for 100 ns;
+        s_d    <= '0'; wait for 50 ns;
+        s_d    <= '1'; wait for 50 ns;
+        s_d    <= '0'; wait for 50 ns;
+        s_d    <= '1'; wait for 50 ns;
         
         s_en   <= '1'; 
-        s_d    <= '0'; wait for 100 ns;
-        s_d    <= '1'; wait for 100 ns;
+        s_d    <= '0'; wait for 50 ns;
+        s_d    <= '1'; wait for 50 ns;
+        s_d    <= '0'; wait for 50 ns;
+        s_d    <= '1'; wait for 50 ns;
         
         s_arst <= '1';
         s_en   <= '0'; 
-        s_d    <= '1'; wait for 100 ns;
-        s_d    <= '0'; wait for 100 ns;
+        s_d    <= '1'; wait for 50 ns;
+        s_d    <= '0'; wait for 50 ns;
+        s_d    <= '0'; wait for 50 ns;
+        s_d    <= '1'; wait for 50 ns;
         
-        s_en   <= '1'; 
-        s_d    <= '1'; wait for 100 ns;
-        s_d    <= '0'; wait for 100 ns;
+        s_en   <= '1';
+        s_d    <= '1'; wait for 50 ns;
+        s_d    <= '0'; wait for 50 ns;
+        s_d    <= '0'; wait for 50 ns;
+        s_d    <= '1'; wait for 50 ns;
 
         report "Stimulus process finished" severity note;
         wait;
@@ -78,7 +86,7 @@
 
 ### Screenshot with simulated time waveforms; always display all inputs and outputs
 
-![simulated time waveforms](Images/waveform.JPG)
+![simulated time waveforms](Images/waveforms.JPG)
 
 ## Third task
 
