@@ -92,11 +92,51 @@
 
 ### VHDL code listing of the processes p_d_ff_arst, p_d_ff_rst, p_jk_ff_rst, p_t_ff_rst with syntax highlighting
 
+#### p_d_ff_arst
+
+```vhdl
+
+```
+
+#### p_d_ff_rst
+
+```vhdl
+
+```
+
+#### p_jk_ff_rst
+
+```vhdl
+
+```
+
+#### p_t_ff_rst
+
 ```vhdl
 
 ```
 
 ### Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
+
+#### p_d_ff_arst
+
+```vhdl
+
+```
+
+#### p_d_ff_rst
+
+```vhdl
+
+```
+
+#### p_jk_ff_rst
+
+```vhdl
+
+```
+
+#### p_t_ff_rst
 
 ```vhdl
 
@@ -104,7 +144,21 @@
 
 ### Screenshot, with simulated time waveforms; always display all inputs and outputs
 
+#### p_d_ff_arst
+
+![simulated time waveforms](Images/waveform0.JPG)
+
+#### p_d_ff_rst
+
 ![simulated time waveforms](Images/waveform1.JPG)
+
+#### p_jk_ff_rst
+
+![simulated time waveforms](Images/waveform2.JPG)
+
+#### p_t_ff_rst
+
+![simulated time waveforms](Images/waveform3.JPG)
 
 ## Fourth task
 
