@@ -178,25 +178,203 @@
 #### p_d_ff_arst
 
 ```vhdl
+    p_clk_gen : process
+    begin
+        while now < 750 ns loop
+            s_clk <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
 
+    p_reset_gen : process
+    begin
+        s_arst <= '0'; wait for 50 ns;
+        s_arst <= '1'; wait for 50 ns;
+        s_arst <= '0'; 
+        wait;
+    end process p_reset_gen;
+
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        s_d    <= '1'; wait for 20 ns;
+        s_d    <= '0'; wait for 20 ns;
+        s_d    <= '1'; wait for 20 ns;
+        s_d    <= '0'; wait for 20 ns;
+        s_d    <= '1'; wait for 20 ns;
+        s_d    <= '0'; wait for 20 ns;
+        s_d    <= '1'; wait for 20 ns;
+        s_d    <= '0'; wait for 20 ns;
+        s_d    <= '1'; wait for 20 ns;
+        s_d    <= '0'; wait for 20 ns;
+        s_d    <= '1'; wait for 20 ns;
+        s_d    <= '0'; wait for 20 ns;
+        s_d    <= '1'; wait for 20 ns;
+        s_d    <= '0'; wait for 20 ns;
+        s_d    <= '1'; wait for 20 ns;
+        s_d    <= '0'; wait for 20 ns;
+        s_d    <= '1'; wait for 20 ns;
+        s_d    <= '0'; wait for 20 ns;
+        s_d    <= '1'; wait for 20 ns;
+        s_d    <= '0'; wait for 20 ns;
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
 ```
 
 #### p_d_ff_rst
 
 ```vhdl
+    p_clk_gen : process
+    begin
+        while now < 750 ns loop
+            s_clk <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
 
+    p_reset_gen : process
+    begin
+        s_rst <= '0'; wait for 120 ns;
+        s_rst <= '1'; wait for 110 ns;
+        s_rst <= '0'; 
+        wait;
+    end process p_reset_gen;
+
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        s_d <= '0'; wait for 20 ns;
+        s_d <= '1'; wait for 20 ns;
+        s_d <= '0'; wait for 20 ns;
+        s_d <= '1'; wait for 20 ns;
+        s_d <= '0'; wait for 20 ns;
+        s_d <= '1'; wait for 20 ns;
+        s_d <= '0'; wait for 20 ns;
+        s_d <= '1'; wait for 20 ns;
+        s_d <= '0'; wait for 20 ns;
+        s_d <= '1'; wait for 20 ns;
+        s_d <= '0'; wait for 20 ns;
+        s_d <= '1'; wait for 20 ns;
+        s_d <= '0'; wait for 20 ns;
+        s_d <= '1'; wait for 20 ns;
+        s_d <= '0'; wait for 20 ns;
+        s_d <= '1'; wait for 20 ns;
+        s_d <= '0'; wait for 20 ns;
+        s_d <= '1'; wait for 20 ns;
+        s_d <= '0'; wait for 20 ns;
+        s_d <= '1'; wait for 20 ns;
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
 ```
 
 #### p_jk_ff_rst
 
 ```vhdl
+    p_clk_gen : process
+    begin
+        while now < 750 ns loop
+            s_clk <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
 
+    p_reset_gen : process
+    begin
+        s_rst <= '1'; wait for 10 ns;
+        s_rst <= '0'; wait for 100 ns;
+        s_rst <= '1'; wait for 100 ns;
+        s_rst <= '0'; 
+        wait;
+    end process p_reset_gen;
+
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        s_j <= '0'; s_k <= '0'; wait for 20 ns;
+        s_j <= '0'; s_k <= '1'; wait for 20 ns;
+        s_j <= '1'; s_k <= '0'; wait for 20 ns;
+        s_j <= '1'; s_k <= '1'; wait for 20 ns;
+        s_j <= '0'; s_k <= '0'; wait for 20 ns;
+        s_j <= '0'; s_k <= '1'; wait for 20 ns;
+        s_j <= '1'; s_k <= '0'; wait for 20 ns;
+        s_j <= '1'; s_k <= '1'; wait for 20 ns;
+        s_j <= '0'; s_k <= '0'; wait for 20 ns;
+        s_j <= '0'; s_k <= '1'; wait for 20 ns;
+        s_j <= '1'; s_k <= '0'; wait for 20 ns;
+        s_j <= '1'; s_k <= '1'; wait for 20 ns;
+        s_j <= '0'; s_k <= '0'; wait for 20 ns;
+        s_j <= '0'; s_k <= '1'; wait for 20 ns;
+        s_j <= '1'; s_k <= '0'; wait for 20 ns;
+        s_j <= '1'; s_k <= '1'; wait for 20 ns;
+        s_j <= '0'; s_k <= '0'; wait for 20 ns;
+        s_j <= '0'; s_k <= '1'; wait for 20 ns;
+        s_j <= '1'; s_k <= '0'; wait for 20 ns;
+        s_j <= '1'; s_k <= '1'; wait for 20 ns;
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
 ```
 
 #### p_t_ff_rst
 
 ```vhdl
+    p_clk_gen : process
+    begin
+        while now < 750 ns loop
+            s_clk <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
 
+    p_reset_gen : process
+    begin
+        s_rst <= '1'; wait for 10 ns;
+        s_rst <= '0'; wait for 100 ns;
+        s_rst <= '1'; wait for 100 ns;
+        s_rst <= '0'; 
+        wait;
+    end process p_reset_gen;
+
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        s_t <= '0'; wait for 20 ns;
+        s_t <= '1'; wait for 20 ns;
+        s_t <= '0'; wait for 20 ns;
+        s_t <= '1'; wait for 20 ns;
+        s_t <= '0'; wait for 20 ns;
+        s_t <= '1'; wait for 20 ns;
+        s_t <= '0'; wait for 20 ns;
+        s_t <= '1'; wait for 20 ns;
+        s_t <= '0'; wait for 20 ns;
+        s_t <= '1'; wait for 20 ns;
+        s_t <= '0'; wait for 20 ns;
+        s_t <= '1'; wait for 20 ns;
+        s_t <= '0'; wait for 20 ns;
+        s_t <= '1'; wait for 20 ns;
+        s_t <= '0'; wait for 20 ns;
+        s_t <= '1'; wait for 20 ns;
+        s_t <= '0'; wait for 20 ns;
+        s_t <= '1'; wait for 20 ns;
+        s_t <= '0'; wait for 20 ns;
+        s_t <= '1'; wait for 20 ns;
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
 ```
 
 ### Screenshot, with simulated time waveforms; always display all inputs and outputs
