@@ -139,7 +139,7 @@ p_output_fsm : process(s_state)
 
 ### Screenshot(s) of the simulation, from which it is clear that controller works correctly
 
-![simulated time waveforms](Images/waveform.JPG)
+![simulated time waveforms](Images/waveform_new.JPG)
 
 ## Third task
 
