@@ -145,7 +145,14 @@ p_output_fsm : process(s_state)
 
 ### State table
 
-![State table](Images/table.jpg)
+| **State** | **South** | **West** | **Delay** | **Sensor** |
+| :-- | :-: | :-: | :-: | :-: |
+| `STOP1`      | red    | red | 1 sec | |
+| `WEST_GO`    | red    | green | 4 sec | South==0 && west==1 ? |
+| `WEST_WAIT`  | red    | yellow | 2 sec | |
+| `STOP2`      | red    | red | 1 sec | |
+| `SOUTH_GO`   | green  | red | 4 sec | South==1 && west==0 ? |
+| `SOUTH_WAIT` | yellow | red | 2 sec | |
 
 ### State diagram
 
