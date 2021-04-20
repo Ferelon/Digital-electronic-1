@@ -4,9 +4,9 @@
 
 ### Team members
 
-Jurek Martin, Kadlec Ji¯Ì, Kislerov· Helena, Kova¯Ìkov· Hana, Kratochvil Tom·ö.
+Kadlec Ji≈ô√≠, Kratochvil Tom√°≈°, Jurek Martin, Kislerov√° Helena, Kova≈ô√≠kov√° Hana
 
-[Link to your GitHub project folder](https://github.com/)
+[Link to your GitHub project folder](https://github.com/xkadle41/Digital-electronic-1/edit/main/labs/Project/)
 
 ### Project objectives
 
